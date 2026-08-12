@@ -124,7 +124,6 @@ export default function Home() {
         '@id': `${siteUrl}/#service`,
         name: 'Webmaster Global Digital Product Development',
         url: siteUrl,
-        email: 'webtechkarthik@gmail.com',
         priceRange: '$',
         areaServed: 'Worldwide',
         founder: { '@id': `${siteUrl}/#person` },
@@ -308,10 +307,10 @@ export default function Home() {
         <span className="eyebrow">HAVE A PROJECT IN MIND? · REPLY WITHIN 24 HOURS</span>
         <h2>Let’s make something<br/><em>worth using.</em></h2>
         <ProjectInquiry />
-        <div className="contact-meta"><a href="mailto:webtechkarthik@gmail.com">webtechkarthik@gmail.com</a><span>Chennai, India · Remote worldwide</span></div>
+        <div className="contact-meta"><span>Chennai, India · Remote worldwide</span></div>
       </section>
 
-      <footer><span>© {new Date().getFullYear()} Webmaster Global</span><span>Frontend engineering · Product development</span><a href="#top">Back to top ↑</a></footer>
+      <footer><span>© {new Date().getFullYear()} Webmaster Global</span><nav className="footer-legal" aria-label="Legal"><a href="/privacy">Privacy</a><a href="/cookies">Cookies</a><a href="/terms">Terms</a></nav><a href="#top">Back to top ↑</a></footer>
     </main>
   )
 }

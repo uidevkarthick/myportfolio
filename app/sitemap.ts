@@ -1,10 +1,11 @@
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{
-    url: 'https://webmaster-global.vercel.app',
-    lastModified: new Date(),
-    changeFrequency: 'weekly',
-    priority: 1,
-  }]
+  const base = 'https://webmaster-global.vercel.app'
+  return [
+    { url: base, lastModified: new Date(), changeFrequency: 'weekly', priority: 1 },
+    { url: `${base}/privacy`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
+    { url: `${base}/cookies`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
+    { url: `${base}/terms`, lastModified: new Date(), changeFrequency: 'yearly', priority: 0.2 },
+  ]
 }

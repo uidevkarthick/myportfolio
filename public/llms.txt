@@ -3,7 +3,6 @@
 > Webmaster Global provides senior, hands-on product development worldwide for websites, web applications, e-commerce, frontend engineering, AI integrations, digital automation, and complete end-to-end product delivery.
 
 Canonical website: https://webmaster-global.vercel.app/
-Contact: webtechkarthik@gmail.com
 Location: Chennai, India; working remotely worldwide
 Response time: Usually within 24 hours
 

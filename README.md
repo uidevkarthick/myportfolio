@@ -126,7 +126,6 @@ Add or modify projects in the "Featured Projects" section of `app/page.tsx`. Upd
 
 ## Contact Information
 
-- Email: webtechkarthik@gmail.com
 - Phone: +91 9159 574 889
 - Location: Chennai, India
 

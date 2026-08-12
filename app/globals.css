@@ -84,6 +84,8 @@ blockquote { font-size:clamp(36px,5vw,70px); line-height:1.12; letter-spacing:-.
 .contact h2 { font-size:clamp(58px,8.5vw,125px); line-height:.92; letter-spacing:-.06em; margin:40px 0 48px; }.contact h2 em{color:var(--coral)}
 .contact .button { margin:auto; }.contact-meta{display:flex;justify-content:space-between;margin-top:120px;padding-top:24px;border-top:1px solid #454641;font:500 10px 'DM Mono';text-transform:uppercase;color:#aaa}
 footer { padding:24px 4vw; display:flex; justify-content:space-between; font:500 10px 'DM Mono'; text-transform:uppercase; }
+.footer-legal{display:flex;gap:20px;font:inherit}.footer-legal a{text-decoration:underline;text-underline-offset:3px}
+.cookie-banner{position:fixed;z-index:10000;left:20px;right:20px;bottom:20px;background:var(--paper);color:var(--ink);border:1px solid var(--ink);box-shadow:0 24px 80px rgba(0,0,0,.28);padding:27px 30px;display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}.cookie-banner h2{font-size:27px;letter-spacing:-.035em;margin-bottom:10px}.cookie-banner .eyebrow{margin-bottom:10px}.cookie-banner p{max-width:760px;color:#60635b;font-size:12px;line-height:1.65}.cookie-banner p a{text-decoration:underline;text-underline-offset:3px;font-weight:700}.cookie-actions{display:flex;gap:9px}.cookie-actions .button{border:1px solid var(--ink);cursor:pointer;font-family:inherit;min-width:160px;padding:13px 16px}.cookie-reject{background:transparent;color:var(--ink)}.cookie-settings{position:fixed;z-index:9000;left:14px;bottom:14px;border:1px solid var(--line);background:var(--paper);color:var(--ink);padding:9px 12px;font:600 9px 'DM Mono';text-transform:uppercase;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.1)}
 
 /* Project inquiry */
 .inquiry-trigger { border:0; cursor:pointer; font-family:inherit; }
@@ -119,7 +121,8 @@ body.inquiry-open .site-header { opacity:0; visibility:hidden; pointer-events:no
   .service{grid-template-columns:40px 1fr}.service p{grid-column:2}.about-intro,.about-grid{grid-template-columns:1fr}.about-grid{margin-top:55px}.portrait-mark{width:220px;margin:auto}.facts{gap:20px;flex-wrap:wrap}.skill-marquee{margin-top:65px}
   .scenario-grid{grid-template-columns:1fr}.scenario-grid article{min-height:280px}.pricing{grid-template-columns:1fr;gap:55px}.founder-offer{padding:28px}.founder-offer h3{font-size:31px;margin-top:40px}
   .feedback-heading{display:block}.feedback-heading>p{margin-top:28px}.feedback-grid{grid-template-columns:1fr}.feedback-grid article{min-height:360px}
-  .contact{padding-top:90px}.contact-meta{margin-top:90px;flex-direction:column;gap:14px}.contact h2 br{display:none}footer span:nth-child(2){display:none}
+  .contact{padding-top:90px}.contact-meta{margin-top:90px;flex-direction:column;gap:14px}.contact h2 br{display:none}footer{gap:18px;flex-wrap:wrap}.footer-legal{order:3;width:100%}
+  .cookie-banner{left:0;right:0;bottom:0;padding:23px 20px;grid-template-columns:1fr;gap:20px}.cookie-banner h2{font-size:23px}.cookie-actions{display:grid;grid-template-columns:1fr 1fr}.cookie-actions .button{min-width:0;padding:12px 8px;font-size:11px}
   .inquiry-backdrop{padding:0;place-items:end center}.inquiry-dialog{max-height:94vh}.inquiry-dialog form{padding:32px 20px}.inquiry-heading{display:block;margin-bottom:34px}.inquiry-heading h3{font-size:39px}.inquiry-heading>p{margin-top:18px}.form-grid{grid-template-columns:1fr}.form-grid .full{grid-column:1}.form-submit{align-items:flex-start;flex-direction:column;gap:20px}.form-submit .button{width:100%}.inquiry-success{min-height:560px;padding:45px 25px}.inquiry-success h3{font-size:48px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project,.button{transition:none}}
