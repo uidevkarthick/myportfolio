@@ -1,4 +1,4 @@
-# Karthick Kumar D - Professional Portfolio
+# Webmaster Global - Professional Portfolio
 
 A modern, responsive portfolio website built with Next.js and React. Showcasing 10+ years of frontend development expertise and featured projects.
 
@@ -140,4 +140,4 @@ For questions or issues, please reach out via email.
 
 ---
 
-Built with ❤️ by Karthick Kumar D
+Built with ❤️ by Webmaster Global

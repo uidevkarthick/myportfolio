@@ -113,7 +113,7 @@ export default function Home() {
       {
         '@type': 'Person',
         '@id': `${siteUrl}/#person`,
-        name: 'Karthick Kumar',
+        name: 'Webmaster Global',
         url: siteUrl,
         jobTitle: 'Freelance Product Developer',
         address: { '@type': 'PostalAddress', addressLocality: 'Chennai', addressCountry: 'IN' },
@@ -122,7 +122,7 @@ export default function Home() {
       {
         '@type': 'ProfessionalService',
         '@id': `${siteUrl}/#service`,
-        name: 'Karthick Kumar Digital Product Development',
+        name: 'Webmaster Global Digital Product Development',
         url: siteUrl,
         email: 'webtechkarthik@gmail.com',
         priceRange: '$',
@@ -139,7 +139,7 @@ export default function Home() {
         '@type': 'WebSite',
         '@id': `${siteUrl}/#website`,
         url: siteUrl,
-        name: 'Karthick Kumar — Freelance Product Developer',
+        name: 'Webmaster Global — Freelance Product Developer',
         inLanguage: 'en',
       },
       { '@type': 'FAQPage', mainEntity: faqs.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) },
@@ -150,7 +150,7 @@ export default function Home() {
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, '\\u003c') }} />
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Karthick home"><span>KK</span><strong>Karthick Kumar</strong></a>
+        <a className="brand" href="#top" aria-label="Webmaster Global home"><span>WG</span><strong>Webmaster Global</strong></a>
         <nav aria-label="Main navigation">
           <a href="#work">Work</a>
           <a href="#services">Services</a>
@@ -290,7 +290,7 @@ export default function Home() {
         <div className="about-grid">
           <div className="portrait-mark" aria-hidden="true"><span>10+</span><small>YEARS<br/>BUILDING</small></div>
           <div className="bio">
-            <h2>Hello, I’m Karthick.</h2>
+            <h2>Hello, we’re Webmaster Global.</h2>
             <p>I’m a lead developer who has spent the last decade turning complex business requirements into clear, dependable product experiences.</p>
             <p>I partner with startups and agencies to lead products end to end: planning the architecture, building frontend and backend systems, connecting commerce and AI tools, launching confidently, and supporting what happens next.</p>
             <div className="facts"><span><strong>3</strong> products shipped</span><span><strong>10+</strong> years experience</span><span><strong>UTC+5:30</strong> remote friendly</span></div>
@@ -311,7 +311,7 @@ export default function Home() {
         <div className="contact-meta"><a href="mailto:webtechkarthik@gmail.com">webtechkarthik@gmail.com</a><span>Chennai, India · Remote worldwide</span></div>
       </section>
 
-      <footer><span>© {new Date().getFullYear()} Karthick Kumar</span><span>Frontend engineer · Product builder</span><a href="#top">Back to top ↑</a></footer>
+      <footer><span>© {new Date().getFullYear()} Webmaster Global</span><span>Frontend engineering · Product development</span><a href="#top">Back to top ↑</a></footer>
     </main>
   )
 }
