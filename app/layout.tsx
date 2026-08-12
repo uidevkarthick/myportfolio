@@ -2,23 +2,23 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://karthickdev.com'),
+  metadataBase: new URL('https://webmaster-global.vercel.app'),
   title: {
     default: 'Karthick Kumar | Freelance Product & Web Developer',
     template: '%s | Karthick Kumar',
   },
   description: 'Freelance product developer for startups, agencies, founders, and small businesses worldwide. Websites, web apps, e-commerce, frontend, AI integrations, MCP connectivity, and complete digital product development.',
-  keywords: ['freelance web developer', 'freelance product developer', 'website developer for small business', 'startup web developer', 'agency frontend developer', 'React developer', 'Next.js developer', 'e-commerce developer', 'Shopify developer', 'AI integration developer', 'MCP developer', 'remote full stack developer', 'Chennai web developer'],
+  keywords: ['freelance web developer', 'freelance product developer', 'website developer for small business', 'startup web developer', 'agency frontend developer', 'React developer', 'Next.js developer', 'TypeScript developer', 'JavaScript developer', 'Node.js developer', 'Python web developer', 'remote full stack developer', 'e-commerce developer', 'Shopify developer', 'landing page developer', 'MVP developer for startups', 'SaaS product developer', 'custom web application developer', 'business website development', 'website redesign service', 'website performance optimization', 'frontend rescue developer', 'digital product consultant', 'AI integration developer', 'AI agent developer', 'MCP developer', 'Model Context Protocol integration', 'Claude integration developer', 'OpenAI integration developer', 'Codex developer', 'API integration developer', 'remote developer worldwide', 'freelance developer India', 'Chennai web developer'],
   alternates: { canonical: '/' },
   category: 'technology',
-  authors: [{ name: 'Karthick Kumar', url: 'https://karthickdev.com' }],
+  authors: [{ name: 'Karthick Kumar', url: 'https://webmaster-global.vercel.app' }],
   creator: 'Karthick Kumar',
   publisher: 'Karthick Kumar',
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1 } },
   openGraph: {
     title: 'Karthick Kumar | Freelance Product & Web Developer',
     description: 'Websites, web apps, e-commerce, frontend, and AI-powered product development for clients worldwide.',
-    url: 'https://karthickdev.com',
+    url: 'https://webmaster-global.vercel.app',
     type: 'website',
     siteName: 'Karthick Kumar — Product Developer',
     locale: 'en_IN',

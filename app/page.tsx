@@ -69,6 +69,23 @@ const feedbackScenarios = [
   },
 ]
 
+const digitalSolutions = [
+  ['Small websites', 'Landing pages, portfolios, campaign pages, personal sites, and up to five-page business websites that are fast and easy to maintain.'],
+  ['Startup products', 'MVPs, SaaS platforms, dashboards, customer portals, internal tools, marketplaces, and custom web applications from idea to launch.'],
+  ['Commerce & growth', 'Shopify stores, custom e-commerce, conversion improvements, payment and shipping integrations, and performance optimisation.'],
+  ['AI & automation', 'AI agents, Claude and OpenAI integrations, MCP servers, reusable Skills, workflow automation, data connections, and intelligent product features.'],
+  ['Rescue & support', 'Frontend, Node.js, Python, API, deployment, performance, and integration problems that are blocking a launch or hurting the business.'],
+  ['Agency partnership', 'Reliable white-label development, overflow capacity, technical leadership, rapid prototypes, and end-to-end delivery for agency clients.'],
+]
+
+const faqs = [
+  ['Can you help with a very small digital project?', 'Yes. I work on everything from a single landing page or tiny website fix to a complete SaaS, commerce, or AI-enabled product.'],
+  ['Do you work with clients outside India?', 'Yes. I work remotely with startups, agencies, founders, and businesses anywhere in the world, with clear asynchronous updates and flexible engagement models.'],
+  ['Can you take over an unfinished or failing project?', 'Yes. I can audit the current product, identify the highest-risk issues, stabilise the release, and create a practical recovery plan across frontend, Node.js, Python, APIs, and deployment.'],
+  ['Can you build the whole product instead of only the frontend?', 'Yes. I lead end-to-end delivery including product planning, architecture, frontend, backend, integrations, e-commerce, AI capabilities, launch, and ongoing technical support.'],
+  ['Why should a startup or agency contact you?', 'You get a senior, hands-on partner who is ready to join quickly, understand the real business problem, take ownership, solve delivery blockers, and work toward a successful product outcome.'],
+]
+
 const skills = ['React', 'Next.js', 'TypeScript', 'JavaScript', 'Node.js', 'Redux', 'GraphQL', 'Shopify', 'Design systems', 'Performance', 'AI integrations', 'Technical leadership']
 
 const platforms = [
@@ -89,36 +106,43 @@ function Arrow() {
 }
 
 export default function Home() {
+  const siteUrl = 'https://webmaster-global.vercel.app'
   const structuredData = {
     '@context': 'https://schema.org',
     '@graph': [
       {
         '@type': 'Person',
-        '@id': 'https://karthickdev.com/#person',
+        '@id': `${siteUrl}/#person`,
         name: 'Karthick Kumar',
-        url: 'https://karthickdev.com',
+        url: siteUrl,
         jobTitle: 'Freelance Product Developer',
         address: { '@type': 'PostalAddress', addressLocality: 'Chennai', addressCountry: 'IN' },
         knowsAbout: ['Web development', 'Product development', 'React', 'Next.js', 'TypeScript', 'Node.js', 'Python', 'Shopify', 'E-commerce', 'AI integration', 'Model Context Protocol'],
       },
       {
         '@type': 'ProfessionalService',
-        '@id': 'https://karthickdev.com/#service',
+        '@id': `${siteUrl}/#service`,
         name: 'Karthick Kumar Digital Product Development',
-        url: 'https://karthickdev.com',
+        url: siteUrl,
         email: 'webtechkarthik@gmail.com',
         priceRange: '$',
         areaServed: 'Worldwide',
-        founder: { '@id': 'https://karthickdev.com/#person' },
+        founder: { '@id': `${siteUrl}/#person` },
         serviceType: ['Website development', 'Web application development', 'Frontend development', 'E-commerce development', 'AI integration', 'Digital product development'],
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: 'Digital development services',
+          itemListElement: digitalSolutions.map(([name, description]) => ({ '@type': 'Offer', itemOffered: { '@type': 'Service', name, description, areaServed: 'Worldwide' } })),
+        },
       },
       {
         '@type': 'WebSite',
-        '@id': 'https://karthickdev.com/#website',
-        url: 'https://karthickdev.com',
+        '@id': `${siteUrl}/#website`,
+        url: siteUrl,
         name: 'Karthick Kumar — Freelance Product Developer',
         inLanguage: 'en',
       },
+      { '@type': 'FAQPage', mainEntity: faqs.map(([name, text]) => ({ '@type': 'Question', name, acceptedAnswer: { '@type': 'Answer', text } })) },
     ],
   }
 
@@ -163,6 +187,16 @@ export default function Home() {
             {aiPowers.map(([icon, name, detail]) => <div className="ai-chip" key={name}><span><img src={icon} alt="" /></span><p><strong>{name}</strong><small>{detail}</small></p></div>)}
           </div>
           <p className="connect-note"><span>↳</span> Need MCP servers, reusable Skills, AI agents, or tool connectivity inside your product? We’re happy to help design and build it.</p>
+        </div>
+      </section>
+
+      <section className="solutions section" id="solutions" aria-labelledby="solutions-title">
+        <div className="section-heading">
+          <div><span className="eyebrow">ANYTHING DIGITAL · ANYWHERE</span><h2 id="solutions-title">Small task or big idea—<br/><em>let’s solve it.</em></h2></div>
+          <p>Ready to join quickly, understand the real problem, remove technical blockers, and help turn your idea into a successful digital outcome.</p>
+        </div>
+        <div className="solutions-grid">
+          {digitalSolutions.map(([title, description], index) => <article key={title}><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></article>)}
         </div>
       </section>
 
@@ -263,6 +297,11 @@ export default function Home() {
           </div>
         </div>
         <div className="skill-marquee">{skills.map(skill => <span key={skill}>{skill}</span>)}</div>
+      </section>
+
+      <section className="faq section" id="faq" aria-labelledby="faq-title">
+        <div className="faq-heading"><span className="eyebrow">COMMON QUESTIONS</span><h2 id="faq-title">A clear answer<br/><em>before we begin.</em></h2></div>
+        <div className="faq-list">{faqs.map(([question, answer], index) => <details key={question} open={index === 0}><summary>{question}<span>+</span></summary><p>{answer}</p></details>)}</div>
       </section>
 
       <section className="contact" id="contact">
