@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import LegalShell from '../LegalShell'
 
-export const metadata: Metadata = { title: 'Terms of Use', description: 'Terms governing use of the Webmaster Global portfolio website.' }
+export const metadata: Metadata = { title: 'Terms of Use', description: 'Terms governing use of the Webmaster Global portfolio website.', alternates: { canonical: '/terms' } }
 
 export default function TermsPage() {
   return <LegalShell eyebrow="WEBSITE TERMS" title="Terms of Use">

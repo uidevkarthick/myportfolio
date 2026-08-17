@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import LegalShell from '../LegalShell'
 
-export const metadata: Metadata = { title: 'Cookie Policy', description: 'Cookie and analytics choices for visitors to Webmaster Global worldwide.' }
+export const metadata: Metadata = { title: 'Cookie Policy', description: 'Cookie and analytics choices for visitors to Webmaster Global worldwide.', alternates: { canonical: '/cookies' } }
 
 export default function CookiesPage() {
   return <LegalShell eyebrow="COOKIE CONSENT · WORLDWIDE" title="Cookie Policy">

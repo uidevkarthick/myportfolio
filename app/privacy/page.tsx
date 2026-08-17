@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import LegalShell from '../LegalShell'
 
-export const metadata: Metadata = { title: 'Privacy Policy', description: 'How Webmaster Global collects, uses, protects, and handles personal information worldwide.' }
+export const metadata: Metadata = { title: 'Privacy Policy', description: 'How Webmaster Global collects, uses, protects, and handles personal information worldwide.', alternates: { canonical: '/privacy' } }
 
 export default function PrivacyPage() {
   return <LegalShell eyebrow="GLOBAL PRIVACY NOTICE" title="Privacy Policy">
